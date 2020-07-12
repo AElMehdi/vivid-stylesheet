@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
+
+.side-menu {
+    height: 100px;
+    width: 15%;
+    background-color: darkslategrey;
+}
+
+.content-container {
+    height: 100px;
+    width: 80%;
+    background-color: cadetblue;
+}
