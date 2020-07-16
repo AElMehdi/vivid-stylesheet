@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Dashboard</title>
-<!--    <link rel="stylesheet" type="text/css" href="dashboad-styles.css">-->
+    <!--    <link rel="stylesheet" type="text/css" href="dashboad-styles.css">-->
 
 </head>
 
@@ -20,31 +20,69 @@
     .side-menu {
         height: 100px;
         width: 15%;
+        margin: 0 10px;
+        border: black solid 1px;
         background-color: darkslategrey;
     }
 
     .content-container {
-        height: 100px;
-        width: 80%;
+        width: 85%;
+        border: black solid 1px;
         background-color: cadetblue;
     }
 
 </style>
 <body>
+
 <div class="side-menu">
     side menu
 </div>
+
 <div class="content-container">
-    content
     <div class="content-container_header">
     </div>
-    <div class="content-container_overview"></div>
-    <div class="content-container_performance></div>
-    <div class=" content-container_technical-support></div>
+    <div class="content-container_tabs-actions">
+        <ul>
+            <li>Overview</li>
+            <li>Audiences</li>
+            <li>Demographics</li>
+            <li>More</li>
+        </ul>
+    </div>
+    <div class="content-container_performance">
+        <div class="performance_header">
+            <h3>Portfolio Performance</h3>
+            <input type="button" value="view All"/>
+        </div>
+        <div class="performance_main">
+            <div class="performance_main_card">Cash Deposits</div>
+            <div class="performance_main_card">Invested Dividents</div>
+            <div class="performance_main_card">Capital Gains</div>
+        </div>
+        <div class="performance_footer">
+            <input type="button" value="View Complete Report">
+        </div>
+    </div>
+    <div class="support-timeline-container">
+        <div class="support-timeline-container_technical-support"></div>
+        <div class="support-timeline-container_timeline"></div>
+    </div>
     <div class="content-container_charts_container">
         <div class="charts-container charts-container_sales-card"></div>
         <div class="charts-container charts-container_sales-card"></div>
         <div class="charts-container charts-container_sales-card"></div>
+    </div>
+    <div class="content-container_dynamic-table">
+        <div class="content-container_dynamic-table_header">
+            Easy Dynamic Tables
+        </div>
+        <div class="content-container_dynamic-table_page-entries">
+            show entries
+        </div>
+        <table>
+            <hd>
+            </hd>
+        </table>
     </div>
 </div>
 
