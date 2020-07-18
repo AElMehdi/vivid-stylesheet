@@ -8,6 +8,11 @@
 </head>
 
 <style>
+    /* Reset */
+    ul, li {
+        list-style: none;
+    }
+
     * {
         margin: 0;
         padding: 0;
@@ -17,20 +22,55 @@
         display: flex;
     }
 
+    /* Side menu */
     .side-menu {
-        height: 100px;
+        height: 100%;
         width: 15%;
         margin: 0 10px;
         border: black solid 1px;
         background-color: darkslategrey;
     }
 
+    /* Main content container */
     .content-container {
         width: 85%;
         border: black solid 1px;
         background-color: cadetblue;
     }
 
+
+    .content-container__header {
+        display: flex;
+    }
+
+    .content-container__header-left {
+        height: 50px;
+        width: 65%;
+        background: brown;
+    }
+
+    .content-container__header-right {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        width: 35%;
+        background: cadetblue;
+    }
+
+    .content-container__header-right__search {
+        display: flex;
+        background: darkgoldenrod;
+    }
+
+    .content-container__header-right__buttons {
+        display: flex;
+        background: fuchsia;
+    }
+
+    .content-container__header-right__profile-picture {
+        height: 50px;
+        background: greenyellow;
+    }
 </style>
 <body>
 
@@ -90,7 +130,24 @@
 </div>
 
 <div class="content-container">
-    <div class="content-container_header">
+    <div class="content-container__header">
+        <div class="content-container__header-left">
+            <h4>Analytics</h4>
+            <p>This is an example dashboard created using build-in elements and components.</p>
+        </div>
+        <div class="content-container__header-right">
+            <div class="content-container__header-right__search">
+                <div>Icon</div>
+                <input type="text" , value="Search">
+            </div>
+            <div class="content-container__header-right__buttons">
+                <p>Button settings</p>
+                <p>Buttons Bell Notification</p>
+            </div>
+            <div class="content-container__header-right__profile-picture">
+                <h4>Picture placeholder</h4>
+            </div>
+        </div>
     </div>
     <div class="content-container_tabs-actions">
         <ul>
