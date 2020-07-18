@@ -71,6 +71,32 @@
         height: 50px;
         background: greenyellow;
     }
+
+    /* Actions tabs */
+    .content-container__tabs-actions {
+        display: flex;
+        justify-content: space-between;
+        background: darkslategray;
+    }
+
+    .content-container__tabs-actions-left {
+        background: beige;
+        width: 10%;
+    }
+
+    .content-container__tabs-actions-center {
+        background: darkblue;
+        width: 80%;
+    }
+
+    .content-container__tabs-actions-right {
+        background: forestgreen;
+        width: 10%;
+    }
+
+    .nav-li {
+        display: inline-block;
+    }
 </style>
 <body>
 
@@ -149,13 +175,29 @@
             </div>
         </div>
     </div>
-    <div class="content-container_tabs-actions">
-        <ul>
-            <li>Overview</li>
-            <li>Audiences</li>
-            <li>Demographics</li>
-            <li>More</li>
-        </ul>
+    <div class="content-container__tabs-actions">
+        <div class="content-container__tabs-actions-right">
+            <ul>
+                <li>icon</li>
+                <li>Show page menu</li>
+            </ul>
+        </div>
+
+        <div class="content-container__tabs-actions-center">
+            <ul>
+                <li class="nav-li">Overview</li>
+                <li class="nav-li">Audiences</li>
+                <li class="nav-li">Demographics</li>
+                <li class="nav-li">More</li>
+            </ul>
+        </div>
+
+        <div class="content-container__tabs-actions-left">
+            <ul>
+                <li>Show right drawer</li>
+                <li>icon</li>
+            </ul>
+        </div>
     </div>
     <div class="content-container_performance">
         <div class="performance_header">
