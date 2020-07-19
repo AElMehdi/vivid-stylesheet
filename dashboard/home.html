@@ -26,7 +26,7 @@
     .side-menu {
         height: 100%;
         width: 15%;
-        margin: 0 10px;
+        margin: 10px;
         border: black solid 1px;
         background-color: darkslategrey;
     }
@@ -36,11 +36,13 @@
         width: 85%;
         border: black solid 1px;
         background-color: cadetblue;
+        margin: 10px;
     }
 
 
     .content-container__header {
         display: flex;
+        margin: 10px;
     }
 
     .content-container__header-left {
@@ -77,6 +79,7 @@
         display: flex;
         justify-content: space-between;
         background: darkslategray;
+        margin: 10px;
     }
 
     .content-container__tabs-actions-left {
@@ -96,6 +99,31 @@
 
     .nav-li {
         display: inline-block;
+    }
+
+    /* Performance container */
+    .content-container__performance {
+        display: flex;
+        flex-direction: column;
+        background: darkmagenta;
+        margin: 10px;
+    }
+
+    .performance__header {
+        display: flex;
+        justify-content: space-between;
+        background: darkgoldenrod;
+    }
+
+    .performance__main {
+        display: flex;
+        justify-content: space-between;
+        background: blue;
+    }
+
+    .performance__footer {
+        align-self: center;
+        background: greenyellow;
     }
 </style>
 <body>
@@ -164,7 +192,7 @@
         <div class="content-container__header-right">
             <div class="content-container__header-right__search">
                 <div>Icon</div>
-                <input type="text" , value="Search">
+                <input type="text" value="Search">
             </div>
             <div class="content-container__header-right__buttons">
                 <p>Button settings</p>
@@ -199,17 +227,17 @@
             </ul>
         </div>
     </div>
-    <div class="content-container_performance">
-        <div class="performance_header">
+    <div class="content-container__performance">
+        <div class="performance__header">
             <h3>Portfolio Performance</h3>
             <input type="button" value="view All"/>
         </div>
-        <div class="performance_main">
-            <div class="performance_main_card">Cash Deposits</div>
-            <div class="performance_main_card">Invested Dividents</div>
-            <div class="performance_main_card">Capital Gains</div>
+        <div class="performance__main">
+            <div class="performance__main-card">Cash Deposits</div>
+            <div class="performance__main-card">Invested Dividents</div>
+            <div class="performance__main-card">Capital Gains</div>
         </div>
-        <div class="performance_footer">
+        <div class="performance__footer">
             <input type="button" value="View Complete Report">
         </div>
     </div>
