@@ -125,6 +125,42 @@
         align-self: center;
         background: greenyellow;
     }
+
+    /* Main content row */
+    .content-container__row {
+        display: flex;
+        justify-content: space-around;
+        background: dodgerblue;
+    }
+
+    /* Widgets: Technical support, timeline */
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+    .card__technical-support {
+        background: darkorange;
+        width: 45%;
+    }
+
+    .card__header {
+        display: flex;
+        justify-content: space-between;
+        background: darkolivegreen;
+    }
+
+    .card__timeline {
+        background: lightcoral;
+        width: 45%;
+    }
+
+    .card__timeline__main {
+    }
+
+    .timeline__footer {
+        align-self: center;
+    }
 </style>
 <body>
 
@@ -241,11 +277,40 @@
             <input type="button" value="View Complete Report">
         </div>
     </div>
-    <div class="support-timeline-container">
-        <div class="support-timeline-container_technical-support"></div>
-        <div class="support-timeline-container_timeline"></div>
+    <div class="content-container__row">
+        <div class="card card__technical-support">
+            <div class="card__header">
+                <div>icon</div>
+                <div>Technical Support</div>
+                <input type="button" value="see more">
+            </div>
+            <div class="technical-support__main">
+                <div class="slider"></div>
+                <div>SALES PROGRESS</div>
+            </div>
+            <div class="technical-support__footer">
+                <h4>Total Orders</h4>
+                <h5>Last year expenses</h5>
+                <div class="progress-bar">Progress bar</div>
+                <h5>YoY Growth</h5>
+            </div>
+        </div>
+        <div class="card card__timeline">
+            <div class="card__header">
+                <div>icon</div>
+                <div>Timeline Example</div>
+                <input type="button" value="see more">
+            </div>
+            <div class="card__timeline__main">
+                <div>timeline widget</div>
+            </div>
+            <div class="timeline__footer">
+                <input type="button" value="View All Messages">
+            </div>
+
+        </div>
     </div>
-    <div class="content-container_charts_container">
+    <div class="content-container__row">
         <div class="charts-container charts-container_sales-card"></div>
         <div class="charts-container charts-container_sales-card"></div>
         <div class="charts-container charts-container_sales-card"></div>
