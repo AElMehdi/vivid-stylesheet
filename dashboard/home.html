@@ -20,6 +20,7 @@
 
     body {
         display: flex;
+        background: #F5F5F5;
     }
 
     /* Side menu */
@@ -48,7 +49,7 @@
     .content-container__header-left {
         height: 50px;
         width: 65%;
-        background: brown;
+        /*background: brown;*/
     }
 
     .content-container__header-right {
@@ -56,22 +57,22 @@
         justify-content: space-between;
         height: 50px;
         width: 35%;
-        background: cadetblue;
+        /*background: cadetblue;*/
     }
 
     .content-container__header-right__search {
         display: flex;
-        background: darkgoldenrod;
+        /*background: darkgoldenrod;*/
     }
 
     .content-container__header-right__buttons {
         display: flex;
-        background: fuchsia;
+        /*background: fuchsia;*/
     }
 
     .content-container__header-right__profile-picture {
         height: 50px;
-        background: greenyellow;
+        /*background: greenyellow;*/
     }
 
     /* Actions tabs */
@@ -140,6 +141,14 @@
         align-content: space-between;
     }
 
+    .card-style {
+        background: #fff;
+        /*align-items: center;*/
+        border-radius: .35rem;
+        padding: .5rem 0;
+        margin: 0 30px;
+    }
+
     .card__technical-support {
         background: darkorange;
         width: 45%;
@@ -168,7 +177,6 @@
     }
 
     .charts-container_sales-card {
-
     }
 </style>
 <body>
@@ -229,7 +237,7 @@
 </div>
 
 <div class="content-container">
-    <div class="content-container__header">
+    <div class="card-style content-container__header">
         <div class="content-container__header-left">
             <h4>Analytics</h4>
             <p>This is an example dashboard created using build-in elements and components.</p>
